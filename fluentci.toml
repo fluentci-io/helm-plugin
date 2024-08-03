@@ -1,0 +1,11 @@
+[package]
+name = "helm"
+version = "0.1.0"
+description = "CI/CD Plugin for Helm"
+license = "MIT"
+keywords = [
+  "helm"
+]
+authors = [
+  "Tsiry Sandratraina <tsiry.sndr@fluentci.io>"
+]
