@@ -5,9 +5,15 @@ on:
       - main
 jobs:
   example:
-    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v3
+      - name: Remove preinstalled helm
+        run: |
+          sudo rm -rf `which helm`
       - name: Setup example
         run: |
           mkdir -p example/.fluentci

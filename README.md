@@ -1,5 +1,6 @@
 # Helm Plugin
 
+[![fluentci pipeline](https://shield.fluentci.io/x/helm)](https://pkg.fluentci.io/helm)
 [![ci](https://github.com/fluentci-io/helm-plugin/actions/workflows/ci.yml/badge.svg)](https://github.com/fluentci-io/helm-plugin/actions/workflows/ci.yml)
 
 This plugin sets up your CI/CD pipeline with a specific version of [Helm](https://helm.sh/).
