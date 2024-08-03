@@ -52,6 +52,9 @@ dag().call("https://pkg.fluentci.io/helm@v0.1.0?wasm=1", "setup", vec!["latest"]
 Github Actions:
 
 ```yaml
+- name: Remove preinstalled helm
+  run: |
+    sudo rm -rf `which helm`
 - name: Setup Fluent CI CLI
   uses: fluentci-io/setup-fluentci@v5
   with:
